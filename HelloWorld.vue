@@ -1,27 +1,23 @@
 <template>
   <div class="hello">
-    hello world
-    <first></first>
-    <second></second>
-    <amm></amm>
-    <h1>string</h1>
-    <!-- Add "scoped" attribute to limit CSS to this component only -->
+    <h1>Hello Anusha</h1>
+    <p> Nice to meet you!.</p>
+    <bose></bose>
   </div>
 </template>
 
 <script>
-import first from '../first.vue'
-import second from '../second.vue'
-import amm from './amm.vue'
+import bose from './demo.vue'
 export default {
   name: 'HelloWorld',
-  components :{
-    first,
-    second,
-    amm,
+  components:{
+     bose,
+     
   },
+
+
   props: {
-    msg: String
+
   }
 }
 </script>
