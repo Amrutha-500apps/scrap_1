@@ -1,28 +1,32 @@
 <template>
   <div class="hello">
-    <p> Amrutha</p>
-    <child></child>
-    <Question></Question>
-    <Table></Table>
-    <cd></cd>
+    hello world
+    <first></first>
+    <second></second>
+    <amm></amm>
+    <h1>string</h1>
+    <!-- Add "scoped" attribute to limit CSS to this component only -->
   </div>
 </template>
-<script>
 
-//import child from '../components/Q4'
-//import Question from'../components/Q1'
-//import Table from'../components/Q2'
-//import cd from '../components/Q6'
+<script>
+import first from '../first.vue'
+import second from '../second.vue'
+import amm from './amm.vue'
 export default {
-  name: 'HelloS33',
-  components:{
-    child,
-    Question,
-    Table,
-    cd,
+  name: 'HelloWorld',
+  components :{
+    first,
+    second,
+    amm,
   },
-  props :{
-    Name:String
-   }
+  props: {
+    msg: String
+  }
 }
 </script>
+
+
+<style scoped>
+
+</style>
