@@ -1,0 +1,23 @@
+<template>
+    <div>
+        <p>{{name}}</p>
+        <p>{{name}}</p>
+    </div>
+</template>
+<script>
+export default{
+    name:'local',
+    props:{
+        name:String,
+        item:String,
+    },
+     data(){
+        return{}
+    },
+    methods:{
+        message(item){
+            this.$emit('name','item');
+        }
+    }
+}
+</script>
